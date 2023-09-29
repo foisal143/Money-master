@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Money Master</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    .inbg {
+      background-color: rgb(221, 221, 221, 0.3);
+    }
+
+    .textColor {
+      color: #31A5AC;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="overflow-hidden p-4 ">
+    <div class="container mx-auto   h-75 mt-5 ">
+      <h1 class="fs-1 fw-bold text-center my-4 textColor">Money Master💰</h1>
+      <div class="row g-5 h-100">
+        <div class="col-12  col-md-6 ">
+          <img class="img-fluid" src="money.png" alt="">
+        </div>
+        <div class="col-12  text-center  col-md-6  ">
+          <div class="inbg w-75 mx-auto pb-4">
+            <h2>Income</h2>
+            <div class="my-2">
+              <label class="form-label fs-3 me-3" for="income">Income:</label>
+              <input id="income" class=" d-inline w-50 form-control" type="text"
+                placeholder="please enter your income amount">
+            </div>
+            <h2>Expenses</h2>
+            <div class="my-2">
+              <label class="form-label me-4 fs-3  text-left" for="income">Food:</label>
+              <input id="food" class=" ms-2 d-inline w-50 form-control" type="text"
+                placeholder="Please enter your  cost">
+            </div>
+            <div class="my-2">
+              <label class="form-label me-4 fs-3  text-left" for="income">Rent:</label>
+              <input id="rent" class=" ms-2 d-inline w-50 form-control" type="text"
+                placeholder="Please enter your  cost">
+            </div>
+            <div class="my-2">
+              <label class="form-label  fs-3  text-left" for="income">Clothes:</label>
+              <input id="clothes" class=" d-inline w-50 form-control" type="text" placeholder="Please enter your  cost">
+            </div>
+            <button id="calculate" class="btn btn-primary px-5">Calculate</button>
+            <h3 class="my-3">Total Expenses:<span id="totalExpense">00</span></h3>
+            <h3>Balance:<span id="balance">00</span></h3>
+            <div class="my-2">
+              <label class="form-label  fs-3  text-left" for="income">Save:</label>
+              <input id="savInput" class=" d-inline w-25 form-control" type="text" value="10">
+              <span>%</span>
+              <button id="saveBtn" class="btn btn-primary px-5">Save</button>
+            </div>
+            <h3>Saving Amount: <span id="saving">00</span></h3>
+            <h3>Remaining Balance: <span id="remaining">00</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- js files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="js/hello.js"></script>
+</body>
+
+</html>
